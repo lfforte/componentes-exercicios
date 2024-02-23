@@ -1,12 +1,13 @@
 import React from "react";
 import "./styles.css";
+import CardVideo from "./componetes/Cards/CardVideo"
 
 export default function App() {
-  const titulo = "Título do vídeo";
-
-  function reproduzVideo() {
-    alert("O vídeo está sendo reproduzido");
-  }
+  /*  const titulo = "Título do vídeo";
+ 
+   function reproduzVideo() {
+     alert("O vídeo está sendo reproduzido");
+   } */
   return (
     <div>
       <div className="tela-inteira">
@@ -26,8 +27,17 @@ export default function App() {
               <li className="botoes-meunu-vertical">Histórico</li>
             </ul>
           </nav>
-
           <section className="painel-de-videos">
+            <CardVideo />
+            <CardVideo />
+            <CardVideo />
+            <CardVideo />
+            <CardVideo />
+            <CardVideo />
+            <CardVideo />
+            <CardVideo />
+          </section>
+          {/* <section className="painel-de-videos">
             <div className="box-pagina-principal" onClick={reproduzVideo}>
               <img src="https://picsum.photos/400/400?a=1 " alt="" />
               <h4>{titulo}</h4>
@@ -60,9 +70,9 @@ export default function App() {
               <img src="https://picsum.photos/400/400?a=8 " alt="" />
               <h4>{titulo}</h4>
             </div>
-          </section>
+          </section> */}
         </main>
-         
+
         <footer>
           <h4>Copyright © 2022 Labenu All rights reserved.</h4>
         </footer>
